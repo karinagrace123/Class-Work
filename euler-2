@@ -1,0 +1,23 @@
+/**
+* @module euler-2
+*By considering the term in the fibonacci sequence
+*whose values do not exceed four million, find the* sum of the even-valued terms.
+* See : https://projecteulder.net/problem=2
+*/
+const { fib } = require(' ./index')
+
+let total = 0
+ let n = 1
+ let f = fib(n)
+ while (f <= 4000000) {
+     // is f an even number?
+     if (f % 2 === 0) {
+         // yes, add it to the total
+        total += f
+     }
+     // update n and fnm
+     n++
+     f = fib(n)
+ }
+ console.log('The sum of even fib numbers: ',total)
+ 
