@@ -1,0 +1,20 @@
+/**
+*@param {number} n The term whose values we want
+* @returns {number} The nth term in the fibonacci sequence
+*/
+const fib = n => {
+    let fnm1 = 1
+    let fnm2 = 1
+    let total = fnm2 + fnm1
+    for (let i = 2; i <= n; i++) {
+        //step 1: reassign fnm 2
+         fnm2 = fnm 1
+        fnm1 = total
+        total += fnm2 
+     }
+        return total 
+}
+
+module.exports = {
+    fib,
+}
